@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>Niji Trip 2026 · 暖色主題</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd48d" />
+  <link rel="manifest" href="manifest_niji_v9.json" />
+  <style>
+    :root {
+      --bg-cream: #fff7ec;
+      --blue-soft: #a9e2ff;
+      --peach-soft: #ffb4a2;
+      --yellow-soft: #ffe08a;
+      --brown-main: #5a3b32;
+      --brown-soft: #7a5446;
+      --border-soft: #ead8c0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Noto Sans TC", system-ui, sans-serif;
+      margin: 0;
+      color: var(--brown-main);
+      background:
+        radial-gradient(circle at 0% 0%, var(--blue-soft) 0, transparent 55%),
+        radial-gradient(circle at 100% 0%, var(--peach-soft) 0, transparent 55%),
+        radial-gradient(circle at 50% 110%, var(--yellow-soft) 0, transparent 60%),
+        var(--bg-cream);
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(255, 247, 236, 0.9);
+      backdrop-filter: blur(8px);
+      color: var(--brown-main);
+      padding: 14px 16px 6px;
+      box-shadow: 0 2px 8px rgba(190, 150, 110, 0.35);
+      position: relative;
+      z-index: 5;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0.06em;
+    }
+    header p {
+      margin: 4px 0 0;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    header .hint {
+      margin: 4px 0 2px;
+      font-size: 11px;
+      opacity: 0.85;
